@@ -1,0 +1,131 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "../pages/home-page/styles/home-page.scss";
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: black;
+  background-color: var(--background-color);
+  line-height: 1;
+}
+.card {
+  width: 460px;
+  height: 665px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  margin: 73px auto;
+  border-radius: 16px;
+
+  &__img {
+    width: 460px;
+    height: 232px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+
+  &__text-content {
+    text-align: center;
+    margin: 32px 16px;
+
+    .card__h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 43.71px;
+      color: var(--title-color);
+      margin-bottom: 16px;
+    }
+
+    .card__p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25.6px;
+      color: var(--body-color);
+      margin: 0px 39.5px 40px 39.5px;
+    }
+  }
+  &__product {
+    width: 428px;
+    height: 83px;
+    background-color: var(--product-color);
+    border-radius: 16px;
+    margin: 0px auto 17px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .card__icon {
+      width: 24px;
+      height: 24px;
+      margin: 29px 32px 29px 30px;
+    }
+
+    .card__stroke {
+      height: 51px;
+    }
+
+    .card__plan {
+      display: flex;
+      flex-direction: column;
+      margin-right: 112px;
+      margin-left: 32px;
+
+      .card__h2 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.59px;
+        margin-bottom: 2px;
+        color: var(--title-color);
+      }
+
+      .card__p2 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22.4px;
+        color: var(--body-color);
+      }
+    }
+
+    .card__change {
+      margin: 29px 32px 28px 0px;
+      font-size: var(--font-size-link);
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+  }
+
+  &__payment {
+    width: 428px;
+    height: 56px;
+    margin: 15px auto;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--hover-color);
+    }
+  }
+
+  &__cancel {
+    display: inline-block;
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  &__stroke2 {
+    width: 100px;
+    height: 1px;
+    background-color: var(--title-color);
+  }
+}

@@ -1,0 +1,124 @@
+@import url('<link rel="preconnect" href="https://fonts.googleapis.com">\a<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\a<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">');
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px; }
+
+button {
+  text-decoration: none;
+  border: none;
+  border-radius: 16px; }
+
+:root {
+  --background-color: #f8f9fe;
+  --title-color: #151827;
+  --primary-color: #680262;
+  --body-color: #85859b;
+  --product-color: #f8f9fe;
+  --white-color: #ffffff;
+  --stroke-color: #cfd1dd;
+  --hover-color: #490245;
+  --font-size-link: 16px;
+  --font-size-button: 16px; }
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: black;
+  background-color: var(--background-color);
+  line-height: 1; }
+
+.card {
+  width: 460px;
+  height: 665px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  margin: 73px auto;
+  border-radius: 16px; }
+  .card__img {
+    width: 460px;
+    height: 232px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px; }
+  .card__text-content {
+    text-align: center;
+    margin: 32px 16px; }
+    .card__text-content .card__h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 43.71px;
+      color: var(--title-color);
+      margin-bottom: 16px; }
+    .card__text-content .card__p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25.6px;
+      color: var(--body-color);
+      margin: 0px 39.5px 40px 39.5px; }
+  .card__product {
+    width: 428px;
+    height: 83px;
+    background-color: var(--product-color);
+    border-radius: 16px;
+    margin: 0px auto 17px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .card__product .card__icon {
+      width: 24px;
+      height: 24px;
+      margin: 29px 32px 29px 30px; }
+    .card__product .card__stroke {
+      height: 51px; }
+    .card__product .card__plan {
+      display: flex;
+      flex-direction: column;
+      margin-right: 112px;
+      margin-left: 32px; }
+      .card__product .card__plan .card__h2 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24.59px;
+        margin-bottom: 2px;
+        color: var(--title-color); }
+      .card__product .card__plan .card__p2 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22.4px;
+        color: var(--body-color); }
+    .card__product .card__change {
+      margin: 29px 32px 28px 0px;
+      font-size: var(--font-size-link);
+      font-weight: 700;
+      color: var(--primary-color); }
+  .card__payment {
+    width: 428px;
+    height: 56px;
+    margin: 15px auto;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    cursor: pointer; }
+    .card__payment:hover {
+      background-color: var(--hover-color); }
+  .card__cancel {
+    display: inline-block;
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px; }
+  .card__stroke2 {
+    width: 100px;
+    height: 1px;
+    background-color: var(--title-color); }
