@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/./src/global-styles/style.css" />
+    <link rel="stylesheet" href="./src/global-styles/style.css" />
     <title>Order summary</title>
   </head>
 
   <body>
+    <div class="home">
     <div id="card" class="card">
       <img
         class="card__img"
@@ -38,12 +39,17 @@
           <a href="#" class="card__change">Change</a>  
       </div>
 
-      <button class="card__payment">
+      <button class="card__payment" id="card__payment"
+      >
+        <div class="card__loader" id="card__loader"></div>
         Proceed to Payment
       </button>
 
       <a href="#" class="card__cancel">Cancel Order
       <div class="card__stroke2"></div></a>
     </div>
+  </div>
+
+    <script src="src/global-scripts/main.js"></script>
   </body>
 </html>
